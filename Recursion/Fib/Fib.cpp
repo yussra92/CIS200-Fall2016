@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int Fib( int nthPosition )
+int Fibonacci( int nthPosition )
 {
 	if (nthPosition <= 2)
 	{
@@ -12,15 +12,15 @@ int Fib( int nthPosition )
 	}
 	else
 	{
-		return(Fib(nthPosition - 1) + Fib(nthPosition - 2));
+		return(Fibonacci(nthPosition - 1) + Fibonacci(nthPosition - 2));
 	}
 }
 
 int main()
 {
-	int nthFibNumber = 43;
+	int nthFibonacciNumber = 43;
 
-	cout << "The " << nthFibNumber << " in the Fib sequence is: " << Fib(nthFibNumber) << endl;
+	cout << "The " << nthFibonacciNumber << " in the Fib sequence is: " << Fibonacci(nthFibonacciNumber) << endl;
 	string input;
 	cin >> input;
 
