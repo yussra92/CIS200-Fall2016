@@ -8,6 +8,7 @@ void placeQueen();
 const char QUEEN = 'Q';
 char board[8][8];
 int numberOfQueensOnTheBoard = 0;
+int numberOfQueensTried = 0;
 bool canPlaceQueen(int row, int col);
 
 int main()
@@ -21,6 +22,8 @@ int main()
 	}
 
 	placeQueen();
+
+	cout << endl << endl << "Total number of queens tried: " << numberOfQueensTried << endl;
 
 	char c;
 	cin >> c;
@@ -41,6 +44,7 @@ void placeQueen()
 			{
 				board[row][numberOfQueensOnTheBoard] = QUEEN;
 				numberOfQueensOnTheBoard++;
+				numberOfQueensTried++;
 				
 				if (numberOfQueensOnTheBoard == 8)
 				{
