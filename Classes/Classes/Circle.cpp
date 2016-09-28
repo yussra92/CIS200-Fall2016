@@ -31,3 +31,8 @@ double Circle::getRadius()
 {
 	return radius;
 }
+
+double Circle::getVolume()
+{
+	return 4.0/3.0*radius*radius*radius*PI;
+}
